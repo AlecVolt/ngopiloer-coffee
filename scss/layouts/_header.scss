@@ -1,0 +1,105 @@
+.header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 20px 0;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 35px 0;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    &__nav,
+    &__personal {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+
+    &__nav {
+        flex-grow: 1;
+    }
+
+    &__logo {
+        width: 113px;
+        height: 43px;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 169px;
+            height: 63px;
+        }
+    }
+
+    &__menu {
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            gap: 35px;
+            font-size: 20px;
+        }
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        color: var(--color-primary-light);
+        transition: color .3s;
+
+        &:hover {
+            color: var(--color-accent-light);
+        }
+    }
+
+    &__personal {
+        gap: 5px;
+
+        @media screen and (min-width: $bp-tablet) {
+            gap: 24px;
+        }
+    }
+
+    &__personal-item {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgba(225, 225, 225, 0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 0;
+        
+        @media screen and (min-width: $bp-tablet) {
+            width: 70px;
+            height: 70px;
+        }
+    }
+
+    &__personal-icons {
+        width: 20px;
+        height: 20px;
+        fill: var(--color-primary-light);
+        transition: fill .3s;
+
+        &:hover {
+            fill: var(--color-accent-light);
+        }
+
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+}
