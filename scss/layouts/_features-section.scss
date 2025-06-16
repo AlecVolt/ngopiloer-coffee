@@ -1,0 +1,9 @@
+.features-section {
+    background-color: var(--color-brand-dark);
+    color: var(--color-brand-light);
+    padding: 36px 0 0;
+
+    &__title {
+        color: var(--color-brand-light);
+    }
+}
