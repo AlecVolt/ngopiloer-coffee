@@ -1,0 +1,30 @@
+.menu-section {
+    text-align: right;
+
+    &__button {
+        margin: 16px 0;
+
+        @media screen and (min-width: $bp-tablet) {
+            margin: 24px 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        text-align: left;
+
+        @media screen and (min-width: $bp-tablet) {
+            flex-direction: row;
+            gap: 40px;
+            justify-content: space-between;
+        }
+    }
+
+    &__item {
+        @media screen and (min-width: $bp-tablet) {
+            width: calc((100% - 80px) / 3);
+        }
+    }
+}

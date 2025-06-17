@@ -22,8 +22,8 @@
                     <ul class="header__menu">
                         <li><a href="#hero-section" class="header__menu-link">Home</a></li>
                         <li><a href="#about-section" class="header__menu-link">About Us</a></li>
-                        <li><a href="#features-section" class="header__menu-link">Our Menu</a></li>
-                        <li><a href="#menu-section" class="header__menu-link">Contact Us</a></li>
+                        <li><a href="#menu-section" class="header__menu-link">Our Menu</a></li>
+                        <li><a href="#footer" class="header__menu-link">Contact Us</a></li>
                     </ul>
                 </nav>
                 <ul class="header__personal">
@@ -77,7 +77,7 @@
             </div>
         </section>
 
-        <section class="features-section" id="features-section">
+        <section class="section features-section" id="features-section">
             <div class="wrapper">
                 <h2 class="section__title features-section__title">Features</h2>
                 <ul class="features-section__list">
@@ -86,7 +86,7 @@
                             <svg class="feature-card__image">
                                 <use href="./images/icons.svg#icon-coffee"></use>
                             </svg>
-                            <h3 class="feature-card__title">High Quality</h3>
+                            <h3 class="feature-card__title feature-card__title--small">High Quality</h3>
                             <p class="feature-card__text">
                                 Enjoy an unrivaled coffee taste 
                                 sensation with our selected coffee beans, carefully roasted to 
@@ -121,7 +121,7 @@
                         </div>
                     </li>
                     <li class="features-section__list-item">
-                        <div class="feature-card">
+                        <div class="feature-card feature-card--last">
                             <svg class="feature-card__image">
                                 <use href="./images/icons.svg#icon-menu"></use>
                             </svg>
@@ -137,13 +137,111 @@
             </div>
         </section>
 
-        <section class="menu-section" id="menu-section">
-            <div class="wrapper"></div>
+        <section class="section menu-section" id="menu-section">
+            <div class="wrapper">
+                <h2 class="section__title">Our Menu</h2>
+                <button class="button menu-section__button" type="button">See All Product</button>
+                <ul class="menu-section__list">
+                    <li class="menu-section__item">
+                        <article class="menu-card">
+                            <img class="menu-card__photo"
+                            srcset="./images/americano-coffee.jpg 1x, ./images/americano-coffee@2x.jpg 2x" 
+                            src="./images/americano-coffee.jpg" alt="Americano Coffee">
+
+                            <div>
+                                <h3 class="menu-card__title">Americano Coffee</h3>
+                                <div class="menu-card__rating">
+                                    <svg class="menu-card__rating-icon">
+                                        <use href="./images/icons.svg#icon-star"></use>
+                                    </svg>
+                                    <p>5.9</p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Fermentum dolor nibh lectus aenean eu sit ut. Eget tortor nullam eros pretium tincidunt ipsum at.
+                                </p>
+                                <div class="menu-card__price-container">
+                                    <p class="menu-card__price">
+                                        $13.6
+                                    </p>
+                                    <button class="button menu-card__button" type="button">
+                                        <svg class="menu-card__button-img">
+                                            <use href="./images/icons.svg#icon-basket"></use>
+                                        </svg>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="menu-section__item">
+                        <article class="menu-card">
+                            <img class="menu-card__photo"
+                            srcset="./images/espresso-coffee.jpg 1x, ./images/espresso-coffee@2x.jpg 2x" 
+                            src="./images/espresso-coffee.jpg" alt="Espresso Coffee">
+
+                            <div>
+                                <h3 class="menu-card__title">Espresso Coffee</h3>
+                                <div class="menu-card__rating">
+                                    <svg class="menu-card__rating-icon">
+                                        <use href="./images/icons.svg#icon-star"></use>
+                                    </svg>
+                                    <p>5.9</p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Fermentum dolor nibh lectus aenean eu sit ut. Eget tortor nullam eros pretium tincidunt ipsum at.
+                                </p>
+                                <div class="menu-card__price-container">
+                                    <p class="menu-card__price">
+                                        $18.1
+                                    </p>
+                                    <button class="button menu-card__button" type="button">
+                                        <svg class="menu-card__button-img">
+                                            <use href="./images/icons.svg#icon-basket"></use>
+                                        </svg>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                    <li class="menu-section__item">
+                        <article class="menu-card">
+                            <img class="menu-card__photo"
+                            srcset="./images/latte-coffee.jpg 1x, ./images/latte-coffee@2x.jpg 2x" 
+                            src="./images/latte-coffee.jpg" alt="Latte Coffee">
+
+                            <div>
+                                <h3 class="menu-card__title">Latte Coffee</h3>
+                                <div class="menu-card__rating">
+                                    <svg class="menu-card__rating-icon">
+                                        <use href="./images/icons.svg#icon-star"></use>
+                                    </svg>
+                                    <p>5.9</p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur. Fermentum dolor nibh lectus aenean eu sit ut. Eget tortor nullam eros pretium tincidunt ipsum at.
+                                </p>
+                                <div class="menu-card__price-container">
+                                    <p class="menu-card__price">
+                                        $15.5
+                                    </p>
+                                    <button class="button menu-card__button" type="button">
+                                        <svg class="menu-card__button-img">
+                                            <use href="./images/icons.svg#icon-basket"></use>
+                                        </svg>
+                                        Add to Cart
+                                    </button>
+                                </div>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
         </section>
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="wrapper"></div>
     </footer>
     
