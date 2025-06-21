@@ -1,0 +1,87 @@
+.footer {
+    background-color: var(--color-brand-dark);
+    color: var(--color-brand-light);
+    padding: 46px 0 36px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 60px 0 40px;
+    }
+
+    &__container {
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+
+        @media screen and (min-width: $bp-tablet) {
+            padding-bottom: 60px;
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-bottom: 80px;
+        }
+    }
+
+    &__logo {
+        width: 173px;
+        height: 65px;
+        margin-bottom: 32px;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 215px;
+            height: 81px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__info-social {
+        display: flex;
+        gap: 12px;
+        padding-top: 12px;
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-top: 28px;  
+        }
+    }
+
+    &__info-icon {
+        width: 22px;
+        height: 22px;
+        fill: var(--color-brand-light);
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+
+        @media screen and (min-width: $bp-desktop) {
+            font-size: 25px;
+        }
+    }
+    
+    &__copyright {
+        text-align: center;
+        position: relative;
+        padding-top: 16px;
+
+        @media screen and (min-width: $bp-desktop) {
+            padding-top: 27px;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: var(--color-brand-light);
+            left: 0;
+            top: 0;
+        }
+    }
+}
