@@ -45,10 +45,17 @@
         }
     }
 
+    &__info-item {
+        &:hover .footer__info-icon{
+            fill: var(--color-accent-light);
+        }
+    }
+
     &__info-icon {
         width: 22px;
         height: 22px;
         fill: var(--color-brand-light);
+        transition: fill .3s;
 
         @media screen and (min-width: $bp-desktop) {
             width: 30px;
@@ -59,10 +66,88 @@
     &__title {
         font-size: 20px;
         font-weight: 600;
+        margin-bottom: 24px;
 
         @media screen and (min-width: $bp-desktop) {
             font-size: 25px;
         }
+    }
+
+    &__address,
+    &__subscribe {
+        flex-shrink: 0;
+    }
+
+    &__address-item {
+        &:hover .footer__address-link{
+            color: var(--color-accent-light);
+        }
+
+        &:hover .footer__address-icon {
+            fill: var(--color-accent-light);
+        }
+    }
+
+    &__address-link {
+        text-decoration: none;
+        color: var(--color-brand-light);
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 20px;
+        transition: color .3s;
+    }
+
+    &__address-icon {
+        width: 20px;
+        height: 20px;
+        fill: var(--color-brand-light);
+        transition: fill .3s;
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &__subscribe-form {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @media screen and (min-width: $bp-tablet) {
+            max-width: 394px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            max-width: 458px;
+            gap: 24px;
+        }
+    }
+
+    &__subscribe-input {
+        width: 100%;
+    }
+
+    &__subscribe-input-label {
+        display: block;
+    }
+
+    &__subscribe-input-control {
+        width: 100%;
+        padding: 20px;
+        border-radius: 20px;
+        border: none;
+        color: var(--color-primary-dark);
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__form-text {
+        font-style: italic;
     }
     
     &__copyright {
